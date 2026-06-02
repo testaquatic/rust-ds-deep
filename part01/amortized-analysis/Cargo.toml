@@ -1,0 +1,13 @@
+[package]
+name = "amortized-analysis"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+[dev-dependencies]
+criterion = { version = "0.8", features = ["html_reports"] }
+
+[[bench]]
+name = "vec_capacity_bench"
+harness = false

@@ -1,0 +1,17 @@
+[package]
+name = "benchmark-study"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+[dev-dependencies]
+criterion = { version = "0.8", features = ["html_reports"] }
+
+[[bench]]
+name = "insert_front_bench"
+harness = false
+
+[[bench]]
+name = "small_lookup_bench"
+harness = false
