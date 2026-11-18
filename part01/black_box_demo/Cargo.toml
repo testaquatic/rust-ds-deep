@@ -1,0 +1,13 @@
+[package]
+name = "black_box_demo"
+version = "0.1.0"
+edition = "2024"
+
+[[bench]]
+harness = false
+name = "black_box_demo"
+
+[dependencies]
+
+[dev-dependencies]
+criterion = { version = "0.8.2", features = ["html_reports"] }
