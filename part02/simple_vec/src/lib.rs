@@ -83,3 +83,9 @@ impl<T> Drop for SimpleVec<T> {
         }
     }
 }
+
+impl<T> Default for SimpleVec<T> {
+    fn default() -> Self {
+        Self::new()
+    }
+}
