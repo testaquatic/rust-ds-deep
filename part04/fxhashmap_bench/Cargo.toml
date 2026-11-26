@@ -1,0 +1,14 @@
+[package]
+name = "fxhashmap_bench"
+version = "0.1.0"
+edition = "2024"
+
+[[bench]]
+harness = false
+name = "fxhashmap_bench"
+
+[dependencies]
+rustc-hash = "2.1.3"
+
+[dev-dependencies]
+criterion = { version = "0.8.2", features = ["html_reports"] }
